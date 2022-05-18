@@ -55,6 +55,7 @@ namespace vibrator {
 #define CUSTOM_DATA_LEN         3
 #define NAME_BUF_SIZE           32
 
+#define MSM_CPU_KONA            356
 #define MSM_CPU_LAHAINA         415
 #define APQ_CPU_LAHAINA         439
 #define MSM_CPU_SHIMA           450
@@ -147,6 +148,7 @@ InputFFDevice::InputFFDevice()
             case MSM_CPU_SM8325:
             case APQ_CPU_SM8325P:
             case MSM_CPU_YUPIK:
+            case MSM_CPU_KONA:
                 mSupportExternalControl = true;
                 break;
             default:
